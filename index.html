@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع البيان</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="libs/font.css">
+
+    <!-- tap icon -->
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <!-- <div class="loading">
+        <div class="big circle">
+        </div>
+        <div class="small circle">
+        </div>
+    </div> -->
+    <!-- start header "contain upper and lower nav" -->
+    <header>
+        <!-- start upper nav -->
+        <nav class="fixed-padding">
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+
+            <!-- search-box -->
+            <form class="search-box" onsubmit="event.preventDefault()">
+                <input type="text" name="name" class="search-field" placeholder="اابحث فى المدونة . . .">
+
+                <button type="submit">
+                    <i class="fas fa-search" style="padding: 0px"></i>
+                </button>
+            </form>
+            <div class="nav-btn-container">
+                <!-- mobile search button -->
+                <button class="mobile-search-btn" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <!-- whatsapp contact icon -->
+                <a href="application.html" class="whatapp-icon">
+                    <img src="img/whatsapp.png" alt="">
+                </a>
+                <!-- ask service btn -->
+                <a href="application.html" class="ask-btn">اطلب الخدمه</a>
+            </div>
+        </nav>
+        <!-- start lower nav -->
+        <div class="lower-nav fixed-padding">
+            <!-- navigation main taps -->
+            <ul class="taps">
+                <li class="main-tap ">
+                    <a href="index.html" class="active">
+                        الرئيسية
+                    </a>
+                </li>
+
+
+                <li class="drop-container main-tap">
+                    <a href="about.html">
+                        عن المؤسسة
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="drop-list who-list">
+                        <a href="about.html" class="list-item">
+                            من نحن
+                        </a>
+                        <a href="warranties.html" class="list-item">
+                            الضمانات
+                        </a>
+                        <a href="privacy-policy.html" class="list-item">
+                            سياسة الخصوصية
+                        </a>
+
+                        <a href="questions.html" class="list-item">
+                            الأسئلة الشائعة
+                        </a>
+
+                    </div>
+                </li>
+                <li href="application.html" class="main-tap drop-container">
+                    <a href="services.html">
+                        خدماتنا
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <!-- nav services list -->
+                    <div class="drop-list services-list">
+                        <!-- nav services list items-->
+
+                    </div>
+                </li>
+                <li class="main-tap">
+                    <a href="blog.html">المدونة</a>
+                </li>
+
+                <li class="main-tap">
+                    <a href="infographic.html">انفوجرافيك علمي</a>
+                </li>
+                <li class="main-tap">
+                    <a href="application.html">طلب الخدمة</a>
+                </li>
+            </ul>
+
+            <!-- navigation social media links -->
+
+            <div class="social-media">
+                <a href="application.html">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+            </div>
+        </div>
+        <!-- alternative nav -->
+        <div class="alternative-nav fixed-padding">
+            <div class="menu">
+                <button class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- navigation main taps -->
+                <ul class="taps">
+                    <li class="main-tap">
+                        <a href="index.html">
+                            الرئيسية
+                        </a>
+                    </li>
+
+                    <li class="drop-container main-tap">
+                        <a href="about.html">
+                            من نحن
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="warranties.html" class="list-item">
+                            الضمانات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html" class="list-item">
+                            سياسة الخصوصية
+                        </a>
+                    </li>
+                    <li>
+                        <a href="questions.html" class="list-item">
+                            الأسئلة الشائعة
+                        </a>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li class="main-tap drop-container">
+                        <a href="services.html">
+                            خدماتنا
+                        </a>
+                    </li>
+                    <li class="main-tap">
+                        <a href="blog.html">المدونة</a>
+                    </li>
+
+                    <li class="main-tap">
+                        <a href="infographic.html">انفوجرافيك علمي</a>
+                    </li>
+                    <li class="main-tap">
+                        <a href="application.html">طلب الخدمة</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navigation social media links -->
+
+            <div class="social-media">
+                <a href="application.html">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="application.html">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- end haeder -->
+
+    <!-- start main -->
+
+    <main>
+        <!-- slider -->
+        <div class="slider main_header">
+            <!-- slide for loop -->
+            <!-- ** note ** -->
+            <!-- attribute bg carry the background of the slide -->
+
+        </div>
+        <button class="next chevron">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="prev chevron">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    </main>
+
+    <!-- about section -->
+
+    <section class="about flex fixed-padding">
+        <div class="about-desciption-box">
+            <h2 class="title">
+                مؤسسة البيان للخدمات الأكاديمية
+            </h2>
+            <p class="about-desciption normal-text about_main">
+                مؤسسة البيان للاستشارات البحثية هي مؤسسة متخصصة بتقديم خدمات البحث العلمي المتنوعة. حيث أنها تقدم
+                العديد من الخدمات التي
+                تساعد الباحثين وطلاب الدراسات العليا في إنجاز بحوثهم ورسائلهم، وكذلك تعتبر مؤسسة البيان من أهم وأقوى
+                المؤسسات العربية
+                التي اهتمت بتقديم الخدمات الأكاديمية للطلاب والباحثين في مختلف المجالات العلمية والإنسانية فقد دأب
+                القائمين عليها على
+                تطويرها وتحديثها بصورة مستمرة لكي تتمكن من تقديم أفضل مستوى من الخدمات للطلاب والباحثين. وأخذت
+                المؤسسة بالتطور بشكل
+                متسارع عبر الزمن من خلال الخبرات المتراكمة والسعي الجاد للتطوير من قبل القائمين عليها والعاملين فيها
+                حتى أخذت مؤسسة
+                البيان للاستشارات البحثية والأبحاث العلمية الخطوة الكبيرة في الانطلاق في عام 2020م، وذلك لتتمكن من
+                تقديم خدماتها لجميع
+                دول الوطن العربي ولمختلف التخصصات عبر موقعها الإلكتروني على شبة الإنترنت.
+
+            </p>
+            <div class="btn-con flex">
+                <a href="application.html" class="more">اعرف المزيد عنا</a>
+                <a href="application.html" class="contact-btn">تواصل معنا</a>
+            </div>
+        </div>
+        <div class="about-details-box flex">
+
+            <div class="detail flex flex-center ">
+                <img src="img/icon3.png" alt="">
+                <p>
+                    سرعة الأداء
+                </p>
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+            <div class="detail flex flex-center ">
+                <img src="img/icon.png" alt="">
+                <p>
+                    فريق من الخبراء
+                </p>
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+            <div class="detail flex flex-center ">
+                <img src="img/icon2.png" alt="">
+                <p>
+                    تواصل عن قرب
+                </p>
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+            <div class="detail flex flex-center ">
+                <img src="img/icon4.png" alt="">
+                <p>
+                    سهولة التعامل
+                </p>
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- information section -->
+
+    <section class="info flex  fixed-padding">
+        <img src="img/logo.svg" alt="">
+        <div class="container">
+            <div class="taps flex">
+                <button class="active btn_one" target-btn="honesty">الأمانةالعلمية</button>
+                <button target-btn="security" class="btn_two">حماية الخصوصية</button>
+                <button target-btn="team" class="btn_three">فريق العمل</button>
+            </div>
+            <div class="display honesty flex">
+                <div class="img-con flex">
+                    <img src="" class="image_one" alt="honesty">
+                </div>
+                <div class="description one_about">
+
+                    <a href="application.html" class="btn">اطلع على خدماتنا</a>
+                </div>
+            </div>
+            <div class="display security flex">
+                <div class="img-con flex">
+                    <img src="img/security.jpg" class="image_two" alt="honesty">
+                </div>
+
+                <div class="description two_about">
+
+                    <a href="application.html" class="btn">اطلع على خدماتنا</a>
+                </div>
+            </div>
+            <div class="display team flex">
+                <div class="img-con flex">
+                    <img src="img/team.jpg" class="image_three" alt="honesty">
+                </div>
+                <div class="description three_about">
+
+                    <a href="application.html" class="btn">اطلع على خدماتنا</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- services -->
+
+    <section class="services fixed-padding">
+        <p class="title">خــدمــاتنــا</p>
+        <p class="small-title">نسعد بتقديم العديد من الخدمات المفيده التى تساعد عملائنا فى التطور</p>
+
+        <div class="services-container main_service flex">
+            <!-- services cards "loop this" -->
+
+
+        </div>
+
+        <a href="services.html" class="services-link-btn">عرض المزيد
+            <i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>
+        </a>
+    </section>
+    <!-- start deal -->
+    <section class="deal  flex flex-center">
+        <div class="word flex flex-center">
+            <p class="title">
+                الاتفاق
+            </p>
+            <p class="description">
+                هدفنا هو نيل ثقتكم . كن مطئنا
+            </p>
+        </div>
+        <a href="application.html" class="contact-btn">
+            تواصل معنا الان
+        </a>
+    </section>
+    <!-- work steps -->
+    <section class="steps fixed-padding flex">
+        <img src="img/steps-large.png" class="large">
+        <img src="img/steps-mobile.png" class="small">
+    </section>
+    <!-- experience -->
+    <section class="experience fixed-padding flex flex-center">
+        <div class="definition">
+            <p class="title">سابقة أعمالنا</p>
+            <p class="description description_our">
+                خبرة أكثر من 6 عاما
+            </p>
+        </div>
+        <div class="statistics-container main_our flex">
+            <!-- statistic "edit here" -->
+
+        </div>
+    </section>
+    <!-- Majors -->
+    <section class="majors fixed-padding">
+        <div class="small-title flex flex-center">
+            المساعده فى <span class="line"></span>
+        </div>
+        <div class="title">
+            جميع التخصصات العلمية
+        </div>
+
+        <!-- major slider buttons -->
+        <button class="major-next flex flex-center">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="major-prev flex flex-center">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <!-- majors slider -->
+        <div class="majors-slider sc_main">
+            <!-- major card "loop this" -->
+
+
+        </div>
+    </section>
+    <!-- customers rate -->
+    <section class="customers-rate fixed-padding">
+        <div class="small-title flex flex-center">
+            اطلع على <span class="line"></span>
+        </div>
+        <div class="title">
+            بعـــض اراء عملائــنا
+        </div>
+        <div class="rate-container main_rating">
+            <!-- rates "loop this" -->
+
+        </div>
+    </section>
+    <!-- offers -->
+    <section class="offers fixed-padding ">
+        <p class="title">
+            أحــدث العــروض
+        </p>
+        <div class="offers-container mian_offer flex " style="justify-content: center;">
+            
+
+            <!-- main offer "one" -->
+
+
+            <!-- more offers -->
+
+            <!-- small offers "loop this" -->
+
+
+        </div>
+        <!-- <div class="offers-taps flex flex-center">
+            <a href="application.html" class="active">01</a>
+            <a href="application.html">02</a>
+            <a href="application.html">03</a>
+            <a href="application.html">04</a>
+        </div> -->
+    </section>
+
+
+
+    <!-- blogs -->
+
+    <section class="blogs fixed-padding">
+        <div class="small-title flex flex-center">
+            اطلع على <span class="line"></span>
+        </div>
+        <div class="title">
+            المدونة
+        </div>
+
+        <!-- blog slider buttons -->
+        <button class="blog-next flex flex-center">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="blog-prev flex flex-center">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <!-- blogs slider -->
+        <div class="blogs-slider main_blog">
+            <!-- blog card "loop this" -->
+
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section fixed-padding flex flex-center">
+        <form class="flex" onsubmit="event.preventDefault();">
+            <div class="title">
+                إرسال رسالة
+            </div>
+            <input type="text" required id="name_form" name="name" placeholder="ما اسمك؟">
+            <input type="email" required id="email_form" name="email" placeholder="البريد الإلكترونى">
+            <input type="tel" required id="number_form" name="number" placeholder="رقم الهاتف ">
+            <input type="text"  requiredid="state_form" name="state" placeholder="الدولة">
+            <select name="service" required class="option_service" id="serv">
+                <option>نوع الخدمه</option>
+
+            </select>
+            <textarea required name="message" id="message_form" placeholder="رسالتك ... "></textarea>
+            <button type="submit" class="btn_form">ارسال الان</button>
+        </form>
+        <img src="img/contact.png">
+
+    </section>
+
+    <!-- contact-info -->
+    <section class="contact-info ">
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            00970597715615
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            info@albayanres.com
+        </div>
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+            فلسطين
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer class="fixed-padding">
+        <section class="main-footer">
+            <div class="footer-about">
+                <img src="img/white-logo.svg" alt="">
+                <p>لوريم إيبسوم هو نص شائع يستخدم في تصميم الجرافيك والطباعة والنشر الإلكتروني. وهو عبارة عن مجموعة
+                    من الفقرات والجمل الغير
+                    مفهومة باللغة اللاتينية، والتي تستخدم لبديل النص الحقيقي حتى يتمكن المصمم من تحديد مظهر المادة
+                    دون التركيز على محتواها.
+                </p>
+                <div class="contact-icons flex flex-center">
+                    <a href="application.html">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fab fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- footer services -->
+            <div class="footer-services">
+                <p class="title">
+                    خــدمــاتنــا
+                </p>
+                <div class="footer-services-container">
+                    
+                </div>
+                <div class="add-email ">
+                    <p class="small-title">القائمة البريدية</p>
+                    <span>أضف بريدك الالكترونى ليصلك كل جديد</span>
+                    <form class="flex">
+                        <input type="email" placeholder="yourEmail@gmail.com">
+                        <button type="submit">إضافة</button>
+                    </form>
+                </div>
+            </div>
+            <div class="twitter">
+                <a class="twitter-timeline" data-height="460" href="https://twitter.com/albayanres">Tweets by</a>
+            </div>
+        </section>
+        <section class="powered">
+            <span>كل الحقوق محفوظة &#169;</span>
+            طور بواسطة مؤسسة البيان
+        </section>
+    </footer>
+
+
+
+    <!-- modals required in all pages -->
+    <div class="shadow fixed-padding">
+        <button class="close">
+            <i class="fas fa-window-close"></i>
+        </button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4f23391fba.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/our_busines.js"></script>
+    <script src="js/our_busines.js"></script>
+    <script src="js/sc.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/offer.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/home_search.js"></script>
+
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

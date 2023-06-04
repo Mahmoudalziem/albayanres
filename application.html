@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>موقع البيان</title>
+        <!-- css links -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fixed.css">
+        <!-- fonts -->
+        <link rel="stylesheet" href="libs/font.css">
+
+        <!-- tap icon -->
+        <link rel="icon" href="img/logo.png">
+
+    </head>
+
+    <body>
+        <!-- <div class="loading">
+            <div class="big circle">
+            </div>
+            <div class="small circle">
+            </div>
+        </div> -->
+        <!-- start header "contain upper and lower nav" -->
+        <header>
+            <!-- start upper nav -->
+            <nav class="fixed-padding">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+
+                <!-- search-box -->
+                <form class="search-box" onsubmit="event.preventDefault()">
+                    <input type="text" name="name" class="search-field" placeholder="اابحث فى المدونة . . .">
+                
+                    <button type="submit">
+                        <i class="fas fa-search" style="padding: 0px"></i>
+                    </button>
+                </form>
+                <div class="nav-btn-container">
+                    <!-- mobile search button -->
+                    <button class="mobile-search-btn" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- whatsapp contact icon -->
+                    <a href="application.html" class="whatapp-icon">
+                        <img src="img/whatsapp.png" alt="">
+                    </a>
+                    <!-- ask service btn -->
+                    <a href="application.html" class="ask-btn">اطلب الخدمه</a>
+                </div>
+            </nav>
+            <!-- start lower nav -->
+            <div class="lower-nav fixed-padding">
+                <!-- navigation main taps -->
+                <ul class="taps">
+                    <li class="main-tap ">
+                        <a href="index.html" class="active">
+                            الرئيسية
+                        </a>
+                    </li>
+
+
+                    <li class="drop-container main-tap">
+                        <a href="about.html">
+                            عن المؤسسة
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="drop-list who-list">
+                            <a href="about.html" class="list-item">
+                                من نحن
+                            </a>
+                            <a href="warranties.html" class="list-item">
+                                الضمانات
+                            </a>
+                            <a href="privacy-policy.html" class="list-item">
+                                سياسة الخصوصية
+                            </a>
+
+                            <a href="questions.html" class="list-item">
+                                الأسئلة الشائعة
+                            </a>
+                        </div>
+                    </li>
+                    <li href="application.html" class="main-tap drop-container">
+                        <a href="services.html">
+                            خدماتنا
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <!-- nav services list -->
+                        <div class="drop-list services-list">
+                            <!-- nav services list items-->
+                
+                        </div>
+                    </li>
+                    <li class="main-tap">
+                        <a href="blog.html">المدونة</a>
+                    </li>
+
+                    <li class="main-tap">
+                        <a href="infographic.html">انفوجرافيك علمي</a>
+                    </li>
+                    <li class="main-tap">
+                        <a href="application.html">طلب الخدمة</a>
+                    </li>
+                </ul>
+
+                <!-- navigation social media links -->
+
+                <div class="social-media">
+                    <a href="application.html">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fab fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- alternative nav -->
+            <div class="alternative-nav fixed-padding">
+                <div class="menu">
+                    <button class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- navigation main taps -->
+                    <ul class="taps">
+                        <li class="main-tap">
+                            <a href="index.html">
+                                الرئيسية
+                            </a>
+                        </li>
+
+                        <li class="drop-container main-tap">
+                            <a href="about.html">
+                                من نحن
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="warranties.html" class="list-item">
+                                الضمانات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html" class="list-item">
+                                سياسة الخصوصية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="questions.html" class="list-item">
+                                الأسئلة الشائعة
+                            </a>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="main-tap drop-container">
+                            <a href="services.html">
+                                خدماتنا
+                            </a>
+                        </li>
+                        <li class="main-tap">
+                            <a href="blog.html">المدونة</a>
+                        </li>
+
+                        <li class="main-tap">
+                            <a href="infographic.html">انفوجرافيك علمي</a>
+                        </li>
+                        <li class="main-tap">
+                            <a href="application.html">طلب الخدمة</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navigation social media links -->
+
+                <div class="social-media">
+                    <a href="application.html">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="application.html">
+                        <i class="fab fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- end haeder -->
+
+        <!-- head banner -->
+        <section class="page-head flex fixed-padding">
+            <p class="path">الرئيسية</p> &nbsp; / &nbsp; <p class="page-name">طلب الخدمة</p>
+        </section>
+
+        <!-- application -->
+        <section class="application-section fixed-padding flex" style="justify-content: space-between;">
+            <form class="application main_form flex" enctype="multipart/form-data"  onsubmit="event.preventDefault();" >
+                <p class="title">لطلب أى خدمة مع انشاء حساب بخطوه واحده , أكمل النموذج التالى :</p>
+                <input type="text" required name="name" id="name_form3" placeholder="الاسم">
+                <input type="email" required name="email" id="email_form3" placeholder="البريد الالكترونى">
+                <input type="number" required name="number" id="number_form3" placeholder="رقم الجوال">
+                <input type="text" required id="address_form3" placeholder="عنوان الطلب">
+                <div class="select-con">
+                    <select class="app_serv3" required id="serv3">
+                        <option hidden>اختر الخدمة</option>
+                        <!-- loop this -->
+                        <option> الخدمة</option>
+                    </select>
+                    <span class="chevron flex flex-center"><i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <input type="text" id="specialization_3" required placeholder="التخصص">
+                <div class="select-con">
+                    <select id="arabic_3">
+                        <option hidden >اللغة</option>
+                        <!-- loop this -->
+                        <option value="1"> عربى</option>
+                        <option value="0"> انجليزى</option>
+                    </select>
+                    <span class="chevron flex flex-center"><i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <!-- <div class="select-con">
+                    <select>
+                        <option hidden>اختر الدرجة العلمية</option>
+                        
+                        <option> عربى</option>
+                        <option> انجليزى</option>
+                    </select>
+                    <span class="chevron flex flex-center"><i class="fa-solid fa-caret-down"></i></span>
+                </div> -->
+                <textarea required placeholder="تفاصيل الطلب" id="order_details_3"></textarea>
+                    
+                <div class="type-of-service flex">
+                    طلب عاجل؟
+                    <label for="normal" id="normal" class="flex flex-center normal"><i class="fa-solid fa-xmark"></i></label>
+                    <label for="urgent" class="flex flex-center correct"><i class="fa-solid fa-check"></i></label>
+                    <input type="radio"   value="1" name="urgent_3">
+                    <input type="radio" id="urgent" value="0" name="urgent_3">
+                </div>
+                <div class="input-file">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>رفع الملفات أو اسحب للرفع</span>
+                    <input type="file" required id="file_1" name="file">
+                </div>
+                <button type="submit" class="send-btn btn_form3">
+                    ارسال الطلب
+                </button>
+            </form>
+
+            <div class="side-bar">
+                <div class="list">
+                    <p class="title">
+                        روابط مهمة
+                    </p>
+                    <ul class="links">
+                        <li>
+                            <a href="application.html">
+                                <i class="fas fa-reply"></i>
+                                <span>الاطلاع على الخدمات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="application.html">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>الطلب عبر الاميل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="application.html">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>الطلب عبر الواتس اب</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="application.html">
+                                <i class="fab fa-telegram"></i>
+                                <span>الطلب عبر تلجرام</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <p class="title">خدمات البيان</p>
+                    <ul class="links services-links services-links-li ">
+                        <li>
+                            <a href="application.html">
+                                <img src="img/detail-img.png" alt="">
+                                <span>الاطلاع على الخدمات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="application.html">
+                                <img src="img/detail-img.png" alt="">
+                                <span>الاطلاع على الخدمات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="application.html">
+                                <img src="img/detail-img.png" alt="">
+                                <span>الاطلاع على الخدمات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact-section fixed-padding flex flex-center">
+            <form class="flex "  onsubmit="event.preventDefault();">
+                <div class="title">
+                    إرسال رسالة
+                </div>
+            <input type="text" id="name_form2"  required name="name" placeholder="ما اسمك؟">
+            <input type="email" id="email_form2" required name="email" placeholder="البريد الإلكترونى">
+            <input type="tel" id="number_form2" required name="number" placeholder="رقم الهاتف ">
+            <input type="text" id="state_form2" required name="state" placeholder="الدولة">
+                <select class="app_serv option_service" id="serv2">
+                    <option>نوع الخدمه</option>
+ 
+                </select>
+                <textarea name="message" required id="message_form2" placeholder="رسالتك ... "></textarea>
+                <button type="submit" class="btn_form2">ارسال الان</button>
+            </form>
+            <img src="img/contact.png">
+
+        </section>
+        <!-- contact-info -->
+        <section class="contact-info ">
+            <a href="blob:null/34062da1-31b3-49c0-be1d-4bc6c54097ac">ddddd</a>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                00970597715615
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                info@albayanres.com
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                فلسطين
+            </div>
+        </section>
+        <!-- start footer -->
+        <footer class="fixed-padding">
+            <section class="main-footer">
+                <div class="footer-about">
+                    <img src="img/white-logo.svg" alt="">
+                    <p>لوريم إيبسوم هو نص شائع يستخدم في تصميم الجرافيك والطباعة والنشر الإلكتروني. وهو عبارة عن مجموعة
+                        من الفقرات والجمل الغير
+                        مفهومة باللغة اللاتينية، والتي تستخدم لبديل النص الحقيقي حتى يتمكن المصمم من تحديد مظهر المادة
+                        دون التركيز على محتواها.
+                    </p>
+                    <div class="contact-icons flex flex-center">
+                        <a href="application.html">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="application.html">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="application.html">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="application.html">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- footer services -->
+                <div class="footer-services">
+                    <p class="title">
+                        خــدمــاتنــا
+                    </p>
+                    <div class="footer-services-container">
+    
+                    </div>
+                    <div class="add-email ">
+                        <p class="small-title">القائمة البريدية</p>
+                        <span>أضف بريدك الالكترونى ليصلك كل جديد</span>
+                        <form class="flex">
+                            <input type="email" placeholder="yourEmail@gmail.com">
+                            <button type="submit">إضافة</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="twitter">
+                    <a class="twitter-timeline" data-height="460" href="https://twitter.com/albayanres">Tweets by</a>
+                </div>
+            </section>
+            <section class="powered">
+                <span>كل الحقوق محفوظة &#169;</span>
+                طور بواسطة مؤسسة البيان
+            </section>
+        </footer>
+
+
+
+        <!-- modals required in all pages -->
+        <div class="shadow fixed-padding">
+            <button class="close">
+                <i class="fas fa-window-close"></i>
+
+            </button>
+        </div>
+
+        <script src="https://kit.fontawesome.com/4f23391fba.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+
+        <script src="js/index.js"></script>
+        <script src="js/abb.js"></script>
+
+        
+
+        <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </body>
+
+</html>
